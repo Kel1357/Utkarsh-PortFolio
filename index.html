@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#070605">
+<meta name="description" content="Utkarsh Vijay — developer portfolio, coding profiles, projects and experiments.">
+<title>Utkarsh Vijay | Digital Archive</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CINEMATIC OPENING SEQUENCE -->
+<div id="boot" class="boot" aria-label="Opening Utkarsh archive">
+  <div class="boot-noise"></div>
+  <div class="boot-vignette"></div>
+  <div class="boot-grid"></div>
+  <div class="boot-scan"></div>
+
+  <div class="branch branch-a"></div>
+  <div class="branch branch-b"></div>
+  <div class="branch branch-c"></div>
+  <div class="branch branch-d"></div>
+  <div class="branch-node node-a"></div>
+  <div class="branch-node node-b"></div>
+  <div class="branch-node node-c"></div>
+
+  <div class="boot-corner corner-tl"><span>UTK / 1357</span><b>ARCHIVE ACCESS</b></div>
+  <div class="boot-corner corner-tr"><span>PERSONAL NODE</span><b>BUILD SEQUENCE</b></div>
+  <div class="boot-corner corner-bl"><span>CHRONAL INDEX</span><b>01 — INITIALIZE</b></div>
+  <div class="boot-corner corner-br"><span>SIGNAL</span><b>LOCKED</b></div>
+
+  <div class="chronometer" aria-hidden="true">
+    <div class="chrono-halo"></div>
+    <div class="chrono-ring chrono-ring-outer"></div>
+    <div class="chrono-ring chrono-ring-mid"></div>
+    <div class="chrono-ring chrono-ring-inner"></div>
+    <div class="chrono-ticks"></div>
+    <div class="chrono-hand chrono-hour"></div>
+    <div class="chrono-hand chrono-minute"></div>
+    <div class="chrono-hand chrono-second"></div>
+    <div class="chrono-center"></div>
+    <div class="chrono-cross chrono-cross-h"></div>
+    <div class="chrono-cross chrono-cross-v"></div>
+    <div class="chrono-label label-n">N</div>
+    <div class="chrono-label label-e">E</div>
+    <div class="chrono-label label-s">S</div>
+    <div class="chrono-label label-w">W</div>
+  </div>
+
+  <div class="boot-core">
+    <div class="boot-kicker">TEMPORAL ARCHIVE // PERSONAL NODE</div>
+    <div class="boot-name"><span>U</span><span>T</span><span>K</span><span>A</span><span>R</span><span>S</span><span>H</span></div>
+    <div class="boot-sub">UTKARSH VIJAY · DIGITAL ARCHIVE</div>
+    <div class="boot-readout"><i></i><span id="bootMessage">LOCATING PRIMARY BRANCH</span><i></i></div>
+  </div>
+
+  <div class="boot-meta">
+    <span>BRANCH <b>1357</b></span>
+    <span>STATUS <b>STABLE</b></span>
+    <span>PROTOCOL <b>ARCHIVE</b></span>
+  </div>
+
+  <div class="boot-enter"><span>PRESS</span> ENTER ARCHIVE <kbd>↵</kbd></div>
+  <button class="skip-boot" type="button" aria-label="Skip opening sequence">SKIP SEQUENCE ↗</button>
+</div>
+
+<div id="site" class="site" aria-hidden="true">
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="grain"></div>
+  <canvas id="techCanvas" class="tech-canvas" aria-hidden="true"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="hud-crosshair" aria-hidden="true"><i></i><b></b><em></em></div>
+  <div class="scan-beam" aria-hidden="true"></div>
+  <a class="skip-link" href="#home">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <header class="topbar">
+    <a class="brand" id="brandTrigger" href="#home" aria-label="Utkarsh archive home"><span class="brand-box" id="brandBox">U</span><span class="brand-name" id="brandQuizTrigger" title="UTK1357 // Code Quiz">UTK<span>1357</span></span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#profiles">Profiles</a>
+      <a href="#projects">Builds</a>
+      <a href="#stack">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+      <a href="quiz.html" class="quiz-nav-link">Quiz ↗</a>
+    </nav>
+    <div class="top-actions">
+      <button class="support-trigger" id="supportTrigger" type="button" aria-haspopup="dialog" aria-controls="supportModal">
+        <span>♡</span> Support My Work
+      </button>
+      <div class="top-links">
+        <a href="https://github.com/Kel1357" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/utkarsh-vijay-00a5452b4/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="home" class="container">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><i></i> DIGITAL ARCHIVE · SIGNAL ONLINE</div>
+        <p class="hero-kicker">B.TECH CSE · 1ST YEAR · BENNETT UNIVERSITY</p>
+        <h1>Utkarsh<br><span>Vijay.</span></h1>
+        <p class="intro">I’m Utkarsh Vijay, a first-year B.Tech Computer Science &amp; Engineering student at Bennett University. I work with Python, C, SQL and MATLAB, while learning C++ and HTML. Right now, I’m focused on mastering DSA and building my personal website independently — without relying on AI to write the work for me.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#projects">Explore the archive ↓</a>
+          <a class="btn" href="https://github.com/Kel1357" target="_blank" rel="noopener">Open GitHub ↗</a>
+        </div>
+        <div class="profile-showcase" id="profiles">
+          <a class="profile-main" href="https://www.linkedin.com/in/utkarsh-vijay-00a5452b4/" target="_blank" rel="noopener">
+            <span class="profile-icon">in</span><span><small>PROFESSIONAL</small><b>LinkedIn</b></span><i>↗</i>
+          </a>
+          <a class="profile-main" href="https://leetcode.com/u/Utkarsh_online/" target="_blank" rel="noopener">
+            <span class="profile-icon">LC</span><span><small>PROBLEM SOLVING</small><b>LeetCode</b></span><i>↗</i>
+          </a>
+          <a class="profile-main" href="https://codeforces.com/profile/Utkarsh1_2_3" target="_blank" rel="noopener">
+            <span class="profile-icon">CF</span><span><small>CONTESTS</small><b>Codeforces</b></span><i>↗</i>
+          </a>
+          <a class="profile-main" href="https://www.geeksforgeeks.org/profile/vijaym2jny" target="_blank" rel="noopener">
+            <span class="profile-icon">GFG</span><span><small>CODING PROFILE</small><b>GeeksforGeeks</b></span><i>↗</i>
+          </a>
+        </div>
+        <div class="signal-row">
+          <span><b>C</b> Core</span>
+          <span><b>PY</b> Python</span>
+          <span><b>SQL</b> Data</span>
+          <span><b>MAT</b> MATLAB</span>
+          <span><b>→ C++</b> Learning</span>
+          <span><b>→ HTML</b> Learning</span>
+          <span><b>1ST YEAR</b> B.Tech CSE</span>
+        </div>
+      </div>
+
+      <div class="hero-console reveal">
+        <div class="console-top"><span>UTK_OS / IDENTITY</span><span>LIVE</span></div>
+        <div class="orbital">
+          <div class="orbital-line"></div>
+          <div class="orbital-ring r1"></div>
+          <div class="orbital-ring r2"></div>
+          <div class="orbital-ring r3"></div>
+          <div class="orbital-dot d1"></div>
+          <div class="orbital-dot d2"></div>
+          <div class="avatar">UV</div>
+        </div>
+        <div class="console-readout">
+          <div><span>IDENTITY</span><b>UTKARSH_VIJAY</b></div>
+          <div><span>FOCUS</span><b>C / PY / SQL / MATLAB</b></div>
+          <div><span>EDUCATION</span><b>B.TECH CSE · YEAR 1</b></div>
+          <div><span>MODE</span><b class="live">BUILDING + LEARNING</b></div>
+        </div>
+        <div class="cinema-markers" aria-label="Hidden cinema references">
+          <button class="movie-marker" data-egg="A113" aria-label="A113 reference"><span>A113</span><small>CLASSROOM</small></button>
+          <button class="movie-marker" data-egg="88MPH" aria-label="88 miles per hour reference"><span>88 MPH</span><small>VELOCITY</small></button>
+          <button class="movie-marker" data-egg="NEXUS6" aria-label="Nexus-6 reference"><span>NEXUS-6</span><small>REPLICANT</small></button>
+          <button class="movie-marker" data-egg="TOTEM" aria-label="Totem reference"><span>TOTEM</span><small>RECALL</small></button>
+          <button class="movie-marker" data-egg="HAL9000" aria-label="HAL 9000 reference"><span>HAL//9000</span><small>HEURISTIC</small></button>
+        </div>
+        <div class="console-footer"><span>ARCHIVE 1357</span><span>NO SIGNAL LOST · <b>5 HIDDEN FRAMES</b></span></div>
+        <div class="console-pulse"><i></i><i></i><i></i><span>NEURAL LINK / STABLE</span></div>
+      </div>
+    </section>
+
+    <section id="coding">
+      <div class="section-top">
+        <span>01 / CODING SIGNALS</span>
+        <p>Stats are secondary — the profiles are the real showcase.</p>
+      </div>
+      <div class="coding-grid">
+        <article class="metric-card leet reveal">
+          <div class="card-top"><b>◈ LeetCode</b><a href="https://leetcode.com/u/Utkarsh_online/" target="_blank" rel="noopener">PROFILE ↗</a></div>
+          <div class="big-number">96</div>
+          <div class="label">PROBLEMS SOLVED</div>
+          <div class="stat-line"><span>Python</span><b>96</b></div>
+          <div class="stat-line"><span>Pandas</span><b>4</b></div>
+          <div class="stat-line"><span>MySQL</span><b>2</b></div>
+          <div class="skill-chips"><span>DP ×10</span><span>Math ×34</span><span>Array ×48</span><span>String ×22</span></div>
+        </article>
+
+        <article class="metric-card cf reveal">
+          <div class="card-top"><b>◎ Codeforces</b><a href="https://codeforces.com/profile/Utkarsh1_2_3" target="_blank" rel="noopener">PROFILE ↗</a></div>
+          <div class="rating"><span>1247</span><small>PUPIL</small></div>
+          <div class="cf-grid"><div><b>37</b><small>ALL TIME</small></div><div><b>25</b><small>LAST MONTH</small></div><div><b>10</b><small>BEST STREAK</small></div></div>
+          <div class="cf-note">Contest rating: 1247 · Contribution: 0</div>
+        </article>
+
+        <article class="metric-card gfg reveal">
+          <div class="card-top"><b>⌘ GeeksforGeeks</b><a href="https://www.geeksforgeeks.org/profile/vijaym2jny" target="_blank" rel="noopener">PROFILE ↗</a></div>
+          <div class="gfg-score-row"><div><strong>73</strong><small>CODING SCORE</small></div><div><strong>50</strong><small>PROBLEMS</small></div></div>
+          <div class="gfg-breakdown">
+            <span><b>32</b> Basic</span><span><b>16</b> Easy</span><span><b>2</b> Medium</span><span><b>0</b> Hard</span>
+          </div>
+          <div class="stat-line"><span>2026 submissions</span><b>52</b></div>
+          <div class="stat-line"><span>POTD solved</span><b>1</b></div>
+          <div class="stat-line"><span>Longest streak</span><b>1 day</b></div>
+          <small class="muted">PROFILE // vijaym2jny · snapshot from profile</small>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-top">
+        <span>02 / BUILDS</span>
+        <p>Things made to learn, test, automate or explore</p>
+      </div>
+
+      <div class="project-feature reveal">
+        <div class="project-art">
+          <div class="feature-grid"></div>
+          <div class="feature-scan"></div>
+          <div class="feature-core"><span>UV</span></div>
+          <div class="feature-meta top">PROJECT_01 // LIVE</div>
+          <div class="feature-meta bottom">HTML · GITHUB PAGES · WEB EXPERIMENT</div>
+        </div>
+        <div class="project-info">
+          <div class="project-id">FEATURED TRANSMISSION</div>
+          <h2>GFG × TVA<br><span>Project</span></h2>
+          <p>An interactive web experiment built around a cinematic archive aesthetic. It was one of the first signals that led to this portfolio: interfaces can feel like places, not just pages.</p>
+          <div class="tags"><span>HTML</span><span>WEB EXPERIMENT</span><span>GITHUB PAGES</span></div>
+          <a class="project-btn" href="https://kel1357.github.io/GFGxTVAProject/" target="_blank" rel="noopener">Open live project ↗</a>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <article class="reveal python-project-card"><span class="num">02</span><div class="project-kicker">PYTHON // BUILD</div><h3>ResumeFiles</h3><p>A Python parser and generator project for handling and processing candidate resume files — one of the builds that best shows how I’m learning Python by making useful things.</p><div class="tags"><span>PYTHON</span><span>FILE HANDLING</span><span>PARSING</span></div><a href="https://github.com/Kel1357/PythonProjects/tree/master/ResumeFiles" target="_blank" rel="noopener">Explore build ↗</a></article>
+        <article class="reveal"><span class="num">03</span><h3>Frame → Video</h3><p>A Python experiment around frames and video, built while exploring file handling and media workflows.</p><a href="https://github.com/Kel1357" target="_blank" rel="noopener">GitHub ↗</a></article>
+        <article class="reveal python-project-card"><span class="num">04</span><div class="project-kicker">PYTHON // API BUILD</div><h3>Weather API</h3><p>A Python weather app integrating external API data for real-time weather information — a practical build around API requests and working with returned data.</p><div class="tags"><span>PYTHON</span><span>API</span><span>JSON</span></div><a href="https://github.com/Kel1357/PythonProjects/tree/master/WeatherApi" target="_blank" rel="noopener">Explore build ↗</a></article>
+        <article class="reveal"><span class="num">05</span><h3>Next Signal</h3><p>This slot is deliberately open. The archive should grow with the next weird, useful or ambitious experiment.</p><a href="https://github.com/Kel1357" target="_blank" rel="noopener">Watch GitHub ↗</a></article>
+      </div>
+    </section>
+
+    <section id="quiz" class="archive-tools">
+      <div class="section-top">
+        <span>03 / CODE QUIZ</span>
+        <p>Write code for 10 randomly selected easy problems from the quiz pool, with sample runs before submission.</p>
+      </div>
+      <div class="archive-tools-grid">
+        <article class="archive-tool-card reveal">
+          <div class="archive-tool-top"><span>NO CLOCK</span><b>01</b></div>
+          <h2>Code Quiz.</h2>
+          <p>Write solutions in a supported language, compile and run visible samples, then submit for the complete test suite.</p>
+          <a class="project-btn quiz-launch" href="quiz.html">Take Quiz ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack">
+      <div class="section-top">
+        <span>03 / EDUCATION + STACK</span>
+        <p>Where I am now — and what I’m learning next</p>
+      </div>
+      <div class="edu-grid">
+        <div class="education-card reveal">
+          <span class="label">CURRENT TRAJECTORY</span>
+          <div class="goal-chip">CURRENT GOAL · MASTER DSA + BUILD A PERSONAL WEBSITE WITHOUT AI</div>
+          <h2>B.Tech Computer Science<br><span>→ Year 1 · 2026–2030</span></h2>
+          <p class="muted">Bennett University · Greater Noida, Uttar Pradesh. Building a strong programming foundation with a current focus on Data Structures &amp; Algorithms, problem solving and building my personal website independently, without AI-generated solutions.</p>
+          <div class="timeline"><span>08 / 2026</span><i></i><span>2030 · IN PROGRESS</span></div>
+        </div>
+        <div class="toolkit reveal">
+          <div><b>C</b><span>Core programming</span></div>
+          <div><b>PYTHON</b><span>Programming · Problem solving</span></div>
+          <div><b>SQL</b><span>Queries · Data</span></div>
+          <div><b>MATLAB</b><span>Computing · Experiments</span></div>
+          <div><b>C++ / HTML</b><span>Currently learning</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-top">
+        <span>04 / SKILLS</span>
+        <p>Current stack — what I use, what I practice, and what I’m learning.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <div class="skill-head"><span class="skill-icon">{ }</span><h3>Languages</h3></div>
+          <div class="skill-row"><b>Python</b><span>Intermediate+</span></div>
+          <div class="skill-row"><b>C</b><span>Beginner+</span></div>
+          <div class="skill-row"><b>MATLAB</b><span>Beginner+</span></div>
+          <div class="skill-row"><b>C++</b><span>Learning</span></div>
+          <div class="skill-row"><b>HTML</b><span>Learning</span></div>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-head"><span class="skill-icon">DB</span><h3>Databases</h3></div>
+          <div class="skill-row"><b>SQL</b><span>Beginner</span></div>
+          <p class="skill-note">Learning to query, filter and work with structured data.</p>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-head"><span class="skill-icon">↯</span><h3>Tools</h3></div>
+          <div class="skill-row"><b>Git &amp; GitHub</b><span>Self-taught</span></div>
+          <div class="skill-row"><b>Linux / Ubuntu Terminal</b><span>Self-taught</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="manifesto reveal">
+      <div class="manifesto-mark">∞</div>
+      <div><span class="project-id">ARCHIVE PRINCIPLE</span><h2>Make things that give you<br><span>another question.</span></h2></div>
+      <p>Every project is an experiment. Some become tools. Some become lessons. The interesting part is what the next build makes possible.</p>
+    </section>
+
+    <section class="post-credit reveal" id="post-credit">
+      <div class="post-credit-head"><span class="project-id">05 / POST-CREDIT // HIDDEN FRAMES</span><span>ATTENTION REWARDED</span></div>
+      <div class="post-credit-body">
+        <div><h2>Some references are better<br><span>found, not announced.</span></h2><p>Five tiny cinema signals are embedded in the interface. Hover the markers in the identity console, or click the archive logo three times.</p></div>
+        <button class="post-credit-trigger" id="postCreditTrigger" type="button">OPEN FRAME INDEX ↗</button>
+      </div>
+    </section>
+
+    <section id="credentials">
+      <div class="section-top">
+        <span>06 / CREDENTIALS</span>
+        <p>Certificates and learning credentials completed so far.</p>
+      </div>
+      <div class="credential-grid credential-grid-many">
+        <article class="credential-card reveal">
+          <div class="credential-seal" aria-hidden="true">ISB</div>
+          <div class="credential-body">
+            <div class="credential-copy">
+            <div class="credential-top"><span>LEARNING CREDENTIAL</span><span>SEP 2026</span></div>
+            <h2>Digital Electronics — Online<br><span>Digital Electronics Courses</span></h2>
+            <p class="credential-issuer">Infosys Springboard</p>
+            <div class="credential-meta"><div><small>ISSUED</small><b>September 2026</b></div></div>
+            </div>
+            <button class="credential-photo" type="button" data-certificate="assets/certificates/digital-electronics.png" aria-label="Open Digital Electronics certificate image">
+              <img src="assets/certificates/digital-electronics.png" alt="Infosys Springboard certificate for Digital Electronics — Online Digital Electronics Courses" loading="lazy">
+              <span>VIEW CERTIFICATE ↗</span>
+            </button>
+          </div>
+          <div class="credential-watermark" aria-hidden="true">CREDENTIAL // 01</div>
+        </article>
+
+        <article class="credential-card reveal">
+          <div class="credential-seal" aria-hidden="true">MW</div>
+          <div class="credential-body">
+            <div class="credential-copy">
+            <div class="credential-top"><span>LEARNING CREDENTIAL</span><span>SEP 2026</span></div>
+            <h2>Symbolic Math <span>Onramp</span></h2>
+            <p class="credential-issuer">MathWorks</p>
+            <div class="credential-meta">
+              <div><small>SKILL</small><b>MATLAB</b></div>
+              <div><small>ISSUED</small><b>September 2026</b></div>
+            </div>
+            </div>
+            <button class="credential-photo" type="button" data-certificate="assets/certificates/symbolic-math-onramp.png" aria-label="Open Symbolic Math Onramp certificate image">
+              <img src="assets/certificates/symbolic-math-onramp.png" alt="MathWorks certificate for Symbolic Math Onramp" loading="lazy">
+              <span>VIEW CERTIFICATE ↗</span>
+            </button>
+          </div>
+          <div class="credential-watermark" aria-hidden="true">CREDENTIAL // 02</div>
+        </article>
+
+        <article class="credential-card reveal">
+          <div class="credential-seal" aria-hidden="true">UM</div>
+          <div class="credential-body">
+            <div class="credential-copy">
+            <div class="credential-top"><span>VERIFIED CREDENTIAL</span><span>AUG 2026</span></div>
+            <h2>Problem Solving Using<br><span>Computational Thinking</span></h2>
+            <p class="credential-issuer">University of Michigan</p>
+            <div class="credential-meta">
+              <div><small>CREDENTIAL ID</small><b>3B3H46BV5WGD</b></div>
+              <div><small>ISSUED</small><b>August 2026</b></div>
+            </div>
+            </div>
+            <button class="credential-photo" type="button" data-certificate="assets/certificates/problem-solving-computational-thinking.png" aria-label="Open Problem Solving Using Computational Thinking certificate image">
+              <img src="assets/certificates/problem-solving-computational-thinking.png" alt="University of Michigan certificate for Problem Solving Using Computational Thinking" loading="lazy">
+              <span>VIEW CERTIFICATE ↗</span>
+            </button>
+          </div>
+          <div class="credential-watermark" aria-hidden="true">CREDENTIAL // 03</div>
+        </article>
+
+        <article class="credential-card reveal">
+          <div class="credential-seal" aria-hidden="true">ISB</div>
+          <div class="credential-body">
+            <div class="credential-copy">
+            <div class="credential-top"><span>LEARNING CREDENTIAL</span><span>SEP 2026</span></div>
+            <h2>Introduction to <span>Python</span></h2>
+            <p class="credential-issuer">Infosys Springboard</p>
+            <div class="credential-meta"><div><small>ISSUED</small><b>September 2026</b></div></div>
+            </div>
+            <button class="credential-photo" type="button" data-certificate="assets/certificates/introduction-to-python.png" aria-label="Open Introduction to Python certificate image">
+              <img src="assets/certificates/introduction-to-python.png" alt="Infosys Springboard certificate for Introduction to Python" loading="lazy">
+              <span>VIEW CERTIFICATE ↗</span>
+            </button>
+          </div>
+          <div class="credential-watermark" aria-hidden="true">CREDENTIAL // 04</div>
+        </article>
+
+        <article class="credential-card reveal">
+          <div class="credential-seal" aria-hidden="true">MW</div>
+          <div class="credential-body">
+            <div class="credential-copy">
+            <div class="credential-top"><span>LEARNING CREDENTIAL</span><span>SEP 2026</span></div>
+            <h2>MATLAB <span>Onramp</span></h2>
+            <p class="credential-issuer">MathWorks</p>
+            <div class="credential-meta">
+              <div><small>SKILL</small><b>MATLAB</b></div>
+              <div><small>ISSUED</small><b>September 2026</b></div>
+            </div>
+            </div>
+            <button class="credential-photo" type="button" data-certificate="assets/certificates/matlab-onramp.png" aria-label="Open MATLAB Onramp certificate image">
+              <img src="assets/certificates/matlab-onramp.png" alt="MathWorks certificate for MATLAB Onramp" loading="lazy">
+              <span>VIEW CERTIFICATE ↗</span>
+            </button>
+          </div>
+          <div class="credential-watermark" aria-hidden="true">CREDENTIAL // 05</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="section-top">
+        <span>07 / FIND ME</span>
+        <p>Have a project, opportunity or idea? Send me a message directly.</p>
+      </div>
+      <div class="contact-box reveal">
+        <div class="contact-intro">
+          <span class="eyebrow"><i></i> GET IN TOUCH</span>
+          <h2>Let’s start a<br><span>conversation.</span></h2>
+          <p>I’m currently open to new opportunities and projects. Feel free to reach out directly using this form.</p>
+          <a class="contact-linkedin" href="https://www.linkedin.com/in/utkarsh-vijay-00a5452b4/" target="_blank" rel="noopener">
+            <small>PROFESSIONAL</small>
+            <b>LinkedIn ↗</b>
+          </a>
+        </div>
+
+        <form class="contact-form" action="https://formsubmit.co/S26CSEU1812@bennett.edu.in" method="POST">
+          <input type="hidden" name="_subject" value="Portfolio Contact — Utkarsh Vijay">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" class="contact-honey">
+
+          <label for="contactName">Name</label>
+          <input id="contactName" type="text" name="name" placeholder="Your name" autocomplete="name" required>
+
+          <label for="contactEmail">Email</label>
+          <input id="contactEmail" type="email" name="email" placeholder="Your email address" autocomplete="email" required>
+
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" name="message" placeholder="Write your message here..." rows="6" required></textarea>
+
+          <button type="submit">Send Message</button>
+          <p class="contact-form-note">Messages submitted here are delivered to my college email.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>UTKARSH VIJAY · KEL1357</span>
+    <span>DESIGNED AS A DIGITAL ARCHIVE</span>
+    <span>© <b id="year"></b></span>
+  </footer>
+</div>
+
+<div class="certificate-lightbox" id="certificateLightbox" aria-hidden="true">
+  <div class="certificate-lightbox-backdrop" data-close-certificate></div>
+  <div class="certificate-lightbox-panel" role="dialog" aria-modal="true" aria-label="Certificate preview">
+    <button class="certificate-lightbox-close" type="button" data-close-certificate aria-label="Close certificate preview">×</button>
+    <img id="certificateLightboxImage" src="" alt="Expanded certificate preview">
+  </div>
+</div>
+
+<div class="support-modal" id="supportModal" aria-hidden="true">
+  <div class="support-backdrop" data-close-support></div>
+  <div class="support-panel" role="dialog" aria-modal="true" aria-labelledby="supportTitle">
+    <button class="support-close" type="button" data-close-support aria-label="Close support window">×</button>
+
+    <div class="support-copy">
+      <span class="eyebrow"><i></i> SUPPORT CHANNEL · UPI</span>
+      <div class="support-pill">♡ Support my work</div>
+      <h2 id="supportTitle">Fuel the Next<br><span>Big Idea.</span></h2>
+      <p>Your support helps me keep building open-source projects, experiments and tools while I learn. Every contribution helps.</p>
+      <p class="support-thanks">Thank you! You're awesome. ✨</p>
+      <div class="support-note">
+        <b>HOW IT WORKS</b>
+        <span>Choose an amount → tap Pay with UPI → your installed UPI app handles the payment.</span>
+      </div>
+    </div>
+
+    <div class="upi-card">
+      <div class="upi-avatar">U</div>
+      <div class="upi-paying">Paying</div>
+      <h3>Utkarsh Vijay</h3>
+
+      <div class="upi-presets" role="group" aria-label="Support amount">
+        <button type="button" data-upi-amount="5">₹5</button>
+        <button type="button" data-upi-amount="10">₹10</button>
+        <button type="button" data-upi-amount="50" class="active">₹50</button>
+        <button type="button" data-upi-amount="100">₹100</button>
+      </div>
+
+      <label class="upi-custom-label" for="upiAmount">Amount</label>
+      <div class="upi-amount-wrap">
+        <span>₹</span>
+        <input id="upiAmount" inputmode="decimal" type="number" min="1" max="100000" step="1" value="50" aria-label="Support amount in rupees">
+      </div>
+
+      <a id="upiPayButton" class="upi-pay-button" href="upi://pay?pa=9309201731%40upi&amp;pn=Utkarsh%20Vijay&amp;am=50&amp;cu=INR&amp;tn=Support%20Work">
+        Pay with UPI ↗
+      </a>
+
+      <div class="upi-qr-label">SCAN QR · <span id="upiQrAmount">₹50</span></div>
+      <img id="upiQr" class="upi-qr" src="assets/upi-50.png" alt="UPI QR code for ₹50 support payment">
+
+      <div class="upi-id-row">
+        <span>UPI ID</span>
+        <b id="upiId">9309201731@upi</b>
+        <button type="button" id="copyUpi" title="Copy UPI ID">COPY</button>
+      </div>
+      <p class="upi-hint" id="upiHint">On desktop, scan the QR with any UPI app. On mobile, use the Pay with UPI button.</p>
+    </div>
+  </div>
+</div>
+
+<div class="egg-modal" id="eggModal" aria-hidden="true">
+  <div class="egg-backdrop" data-close-egg></div>
+  <div class="egg-panel" role="dialog" aria-modal="true" aria-labelledby="eggTitle">
+    <button class="egg-close" type="button" data-close-egg aria-label="Close">×</button>
+    <span class="project-id">FRAME INDEX // POST-CREDIT</span>
+    <h2 id="eggTitle">CINEMA <span>SIGNALS.</span></h2>
+    <p>Small references, deliberately tucked into the interface. Nothing essential is hidden — they are just rewards for looking twice.</p>
+    <div class="egg-list">
+      <button data-egg="A113"><b>A113</b><span>Pixar / animation reference</span></button>
+      <button data-egg="88MPH"><b>88 MPH</b><span>Back to the Future / velocity</span></button>
+      <button data-egg="NEXUS6"><b>NEXUS-6</b><span>Blade Runner / synthetic identity</span></button>
+      <button data-egg="TOTEM"><b>TOTEM</b><span>Inception / reality check</span></button>
+      <button data-egg="HAL9000"><b>HAL//9000</b><span>2001: A Space Odyssey / machine intelligence</span></button>
+    </div>
+    <div class="egg-secret">BONUS // If you noticed all five before opening this panel: <b>you were paying attention.</b></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

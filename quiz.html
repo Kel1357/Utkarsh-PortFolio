@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Code Quiz // UTK1357</title>
+<meta name="description" content="UTK1357 Code Quiz — ten randomly selected coding problems from a 20-problem pool.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+<div class="quiz-noise"></div><div class="quiz-grid"></div><div class="quiz-scan"></div>
+
+<main class="archive-quiz" id="archiveQuiz">
+  <section class="quiz-start hidden" id="startScreen"></section>
+
+  <section class="test-screen hidden" id="testScreen" aria-live="polite">
+    <header class="test-head">
+      <div><span class="quiz-kicker">ACTIVE TEST // NO CLOCK</span><h2 id="questionTitle">—</h2><div id="questionMeta" class="question-meta"></div></div>
+      <div class="test-progress"><small>PROGRESS</small><strong id="progressText">01 / 10</strong><div class="progress-track"><span id="progressBar"></span></div><div class="question-nav" id="questionNav" aria-label="Question navigation"></div></div>
+    </header>
+    <section class="coding-workspace">
+      <article class="problem-panel">
+        <div class="question-index-row"><div class="question-index" id="questionIndex">01</div><div><div class="source-chip" id="questionSource">SOURCE</div><div class="method-chip">ANY CORRECT ALGORITHM · ANY SUPPORTED LANGUAGE</div></div></div>
+        <h3 class="problem-title" id="questionTitleInline">—</h3>
+        <p class="question-prompt" id="questionPrompt"></p>
+        <div class="problem-section"><small>WHAT YOU NEED TO BUILD</small><p id="questionTaskDetail">Write a complete program that reads the stated input and prints the required output for every test case.</p></div>
+        <div class="io-grid"><div><small>INPUT FORMAT</small><pre id="questionInput"></pre></div><div><small>OUTPUT FORMAT</small><pre id="questionOutput"></pre></div></div>
+        <div class="sample-section"><div class="sample-heading"><small>VISIBLE SAMPLE TEST CASES</small><span>RUN CODE checks these first</span></div><div id="sampleTests" class="sample-tests"></div></div>
+        <div class="constraints"><small>CONSTRAINTS</small><ul id="questionConstraints"></ul></div>
+        <div class="hint-row"><button class="hint-toggle" id="hintToggle" type="button">REVEAL HINT</button><p class="question-hint" id="questionHint" hidden></p></div>
+        <div class="problem-note"><strong>JUDGE RULE</strong><span>There is no required algorithm. Brute force, hashing, sorting, two pointers, recursion, or another correct approach can all pass when the output is correct.</span></div>
+        <a class="question-source-link" id="questionSourceLink" target="_blank" rel="noopener">VIEW ORIGINAL SOURCE ↗</a>
+      </article>
+
+      <section class="editor-panel">
+        <div class="editor-toolbar"><div><label>LANGUAGE <select id="language"><option value="113">Python 3.14</option><option value="105">C++ GCC 14.1</option><option value="103">C GCC 14.1</option><option value="102">JavaScript Node 22</option><option value="91">Java 17</option><option value="106">Go 1.22</option><option value="108">Rust 1.85</option></select></label><span class="save-indicator" id="saveIndicator">AUTO-SAVED</span></div><span id="judgeState">READY</span></div>
+        <div class="editor-label"><span>YOUR SOLUTION</span><span>Code is saved continuously</span></div>
+        <textarea id="codeEditor" spellcheck="false" aria-label="Code editor"></textarea>
+        <div class="editor-actions"><button class="run-btn" id="runCode" type="button">COMPILE &amp; RUN <span>▶</span></button><button class="submit-code-btn" id="submitCode" type="button">SUBMIT ANSWER <span>⌁</span></button><button class="next-btn" id="nextQuestion" type="button" disabled>NEXT QUESTION →</button></div>
+        <div class="judge-output" id="judgeOutput"><span class="terminal-dot"></span><span>Compile &amp; Run checks the visible sample cases. Submit runs the complete suite.</span></div>
+      </section>
+    </section>
+    <div class="test-actions"><span id="answerState">WRITE → RUN → SUBMIT</span><span>NO CLOCK · FULLSCREEN REQUIRED · AUTO-SAVE</span></div>
+  </section>
+
+  <section class="quiz-result hidden" id="resultScreen">
+    <div class="result-orbit"><div></div><strong id="resultScore">—</strong></div>
+    <div class="quiz-kicker">RESULT // COMPLETE</div>
+    <h2>QUIZ <span>COMPLETE.</span></h2>
+    <p id="resultSummary"></p>
+    <div class="result-stats" id="resultStats"></div>
+    <div class="result-list" id="resultList"></div>
+    <div class="result-actions"><a href="index.html">RETURN TO ARCHIVE ↗</a></div>
+  </section>
+</main>
+<footer><span>UTK1357 // CODE QUIZ</span><span>WRITE → RUN → LEARN</span></footer>
+<script src="quiz.js"></script>
+</body>
+</html>
